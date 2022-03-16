@@ -11,9 +11,9 @@ const App = () => {
         {titulo}
       </h1>
       {
-        numeros.map( num => {
+        numeros.map( (num, indice) => {
           return (  
-            <p> 
+            <p key={'numero_'+indice}> 
               Numero: {num} 
             </p>
           );
