@@ -1,14 +1,14 @@
 # Pasos para correr esta aplicación
 
-### `Hacer un fork del repositorio a tu Github`
+### 1) `Hacer un fork del repositorio a tu Github`
 
-### `git clone url-del-repositorio`
+### 2) `git clone url-del-repositorio`
 
-### `Navegar a la carpeta que se clono en tu computadora`
+### 3) `Navegar a la carpeta que se clono en tu computadora`
 
-### `npm install`
+### 4) `npm install`
 
-### `npm start`
+### 5) `npm start`
 
 # Para apagar el servidor de React
 
