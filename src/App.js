@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Estudiante from "./componentes/Estudiante/Estudiante";
 
-function App() {
+const App = () => {
+
+  const titulo = "Bienvenidos a la aplicación de estudiantes.";
+  const numeros = [1,2,3,4,5];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        {titulo}
+      </h1>
+      {
+        numeros.map( num => {
+          return (  
+            <p> 
+              Numero: {num} 
+            </p>
+          );
+        })
+      }
+
+      <Estudiante nombre="Alexander" apellido="Martinez" curso="Desarrollo Web" />
+      <Estudiante nombre="Martha" apellido="Garcia" curso="Estructura de Datos"/>
+      <Estudiante nombre="Julieta" apellido="Gomez" curso="Bases de Datos"/>
+      <Estudiante nombre="Alan" apellido="Morales" curso="Aplicaciones mobiles"/>
     </div>
   );
 }
